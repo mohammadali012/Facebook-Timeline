@@ -1,0 +1,35 @@
+body {
+    background-color: #f0f2f5;
+}
+
+textarea {
+    height: 100px;
+}
+
+.author-info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.author-info img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.author-info h3{
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.author-info span {
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.author-details {
+               display: flex;
+    flex-direction: column;
+        gap: 0px;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Database System</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="facebook-timeline my-5">
+      <div class="container my-5">
+        <div class="row justify-content-center">
+          <div class="col-md-5">
+            <div class="card shadow-sm">
+              <div class="card-body d-flex gap-1">
+                <img
+                  src="https://scontent.fjsr6-1.fna.fbcdn.net/v/t39.30808-1/363733497_117342581432461_7173626960320633639_n.jpg?stp=c0.0.40.40a_cp0_dst-jpg_p40x40&_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=MV7xRuk1-SUAX_ACGs6&_nc_ht=scontent.fjsr6-1.fna&oh=00_AfBiomqWiDJ4P4IA3o0xvodX2Su9mZ_D23tvgx6-Ii6kOw&oe=660416A2"
+                  alt=""
+                />
+                <button
+                  class="btn btn-primary w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#post-create"
+                >
+                  Whats on your mind?
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div id="post-area"></div>
+
+
+      </div>
+    </div>
+
+    <div class="modal fade" id="post-create">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>create post</h2>
+            <button class="btn-close" id="post_create_btn" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="msg"></div>
+            <form id="post-create-form">
+              <div class="my-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Author Name"
+                  name="name"
+                />
+              </div>
+              <div class="my-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Author photo"
+                  name="photo"
+                />
+              </div>
+              <div class="my-3">
+                <textarea
+                  type="text"
+                  class="form-control"
+                  placeholder="post content"
+                  name="post"
+                ></textarea>
+              </div>
+              <div class="my-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="post photo"
+                  name="post photo"
+                />
+              </div>
+              <div class="my-3">
+                <button type="submit" class="btn btn-primary">post</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="post-update">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Edit post</h2>
+            <button class="btn-close" id="post_create_btn" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="msg"></div>
+            <form id="post-create-form">
+              <div class="my-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Author Name"
+                  name="name"
+                />
+              </div>
+              <div class="my-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Author photo"
+                  name="photo"
+                />
+              </div>
+              <div class="my-3">
+                <textarea
+                  type="text"
+                  class="form-control"
+                  placeholder="post content"
+                  name="post"
+                ></textarea>
+              </div>
+              <div class="my-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="post photo"
+                  name="post photo"
+                />
+              </div>
+              <div class="my-3">
+                <button type="submit" class="btn btn-primary">post</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./src/data.js"></script>
+    <script src="./src/functions.js"></script>
+    <script src="./src/models.js"></script>
+    <script src="./src/main.js"></script>
+  </body>
+</html>
